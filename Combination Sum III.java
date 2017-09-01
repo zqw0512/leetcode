@@ -2,7 +2,7 @@ class Solution {
         
         public List<List<Integer>> combinationSum3(int k, int n) {
                 List<List<Integer>> result = new ArrayList<>();
-                backtrack(result, new ArrayList<>(), 1, k, n );
+                backtrack(result, new ArrayList<>(), 1, k, n);
                 return result;
         }
         public void backtrack(List<List<Integer>> result, List<Integer> temp, int start, int k , int target){
