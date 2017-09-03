@@ -14,7 +14,7 @@ class Solution {
                                 if (node.left != null) queue.offer(node.left);
                                 if (node.right != null) queue.offer(node.right);
                         }
-                        result.add(temp/size);
+                        result.add(temp / size);
                 }
                 return result;
         }
