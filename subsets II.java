@@ -10,8 +10,8 @@ class Solution {
         }
         public void backtrack(List<List<Integer>> result, List<Integer> temp, int[] nums, int index) {
                 result.add(new ArrayList<>(temp));
-                for(int i= index; i < nums.length; i++) {
-                        if(i != index && nums[i] == nums[i-1]) continue;
+                for (int i= index; i < nums.length; i++) {
+                        if (i != index && nums[i] == nums[i-1]) continue;
                         temp.add(nums[i]);
                         backtrack(result, temp, nums, i + 1);
                         temp.remove(temp.size() - 1);
